@@ -128,10 +128,18 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
   )
 
   const dynamicInputClass = isTransparent 
-    ? "w-full mb-3 px-4 py-2 bg-transparent text-white placeholder-gray-400 outline-none transition-colors border rounded-md focus:border-[var(--color-gold-light)]"
+    ? "lead-modal-input w-full mb-3 px-4 py-2.5 text-white placeholder-white placeholder:text-white placeholder:opacity-100 outline-none transition-all rounded-lg"
     : "w-full mb-3 px-4 py-2 bg-white text-gray-900 placeholder-gray-400 outline-none transition-colors border rounded-md shadow-sm focus:border-[var(--color-gold)]";
 
-  const dynamicInputStyle = isTransparent ? { fontFamily: F_SANS, borderColor: 'rgba(205, 158, 75, 0.4)' } : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
+  const dynamicInputStyle = isTransparent ? { 
+    fontFamily: F_SANS, 
+    background: 'rgba(255, 255, 255, 0.08)',
+    borderColor: '#CD9E4B',
+    borderWidth: '1.5px',
+    borderStyle: 'solid',
+    color: '#ffffff',
+    fontSize: '14px',
+  } : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-1 w-full">
@@ -145,8 +153,8 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
       {error && <p className="text-red-500 text-xs mt-1" style={{ fontFamily: F_SANS }}>{error}</p>}
 
       <button type="submit" disabled={loading}
-        className="btn-gold mt-5 font-bold uppercase tracking-wider transition-all disabled:opacity-70 cursor-pointer"
-        style={{ 
+        className={isTransparent ? "modal-submit-btn" : "btn-gold mt-5 font-bold uppercase tracking-wider transition-all disabled:opacity-70 cursor-pointer"}
+        style={isTransparent ? {} : { 
           padding: '12px 24px', 
           width: '180px', 
           margin: '20px auto 0',

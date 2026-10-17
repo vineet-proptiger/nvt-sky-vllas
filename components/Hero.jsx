@@ -307,35 +307,30 @@ const Hero = ({ setIsOpen }) => {
         }
 
         /* ─── Desktop & Tablet Layer Badges (Only screen width >= 768px) ─── */
+        /* ─── Desktop & Tablet Layer Badges (Only screen width >= 768px) ─── */
         @media (min-width: 768px) {
           .hero-title-badge {
             display: inline-block;
-            background: rgba(11, 58, 61, 0.58);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 6px 18px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
           }
           .hero-subtitle-badge {
             display: inline-block;
-            background: rgba(11, 58, 61, 0.52);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 5px 16px;
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
           }
           .hero-bullet-badge {
-            background: rgba(11, 58, 61, 0.52);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 6px 16px;
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             width: fit-content;
             color: #ffffff;
           }
@@ -385,7 +380,7 @@ const Hero = ({ setIsOpen }) => {
             height: auto !important;
             aspect-ratio: auto;
             background: #f8faf5 !important;
-            padding-top: 56px !important;
+            padding-top: 68px !important;
           }
           .hero-slider-wrapper {
             position: relative;

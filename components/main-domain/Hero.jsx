@@ -310,32 +310,26 @@ const Hero = ({ setIsOpen }) => {
         @media (min-width: 768px) {
           .hero-title-badge {
             display: inline-block;
-            background: rgba(2, 132, 199, 0.45);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 6px 18px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
           }
           .hero-subtitle-badge {
             display: inline-block;
-            background: rgba(2, 132, 199, 0.4);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 5px 16px;
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
           }
           .hero-bullet-badge {
-            background: rgba(2, 132, 199, 0.4);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background: #0284C7;
             padding: 6px 16px;
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             width: fit-content;
             color: #ffffff;
           }
@@ -385,7 +379,7 @@ const Hero = ({ setIsOpen }) => {
             height: auto !important;
             aspect-ratio: auto;
             background: #f8faf5 !important;
-            padding-top: 56px !important;
+            padding-top: 68px !important;
           }
           .hero-slider-wrapper {
             position: relative;
@@ -428,8 +422,8 @@ const Hero = ({ setIsOpen }) => {
             letter-spacing: 0.05em;
             text-transform: uppercase;
             background: #F4EFE3;
-            color: #2f4614;
-            border: 1px solid #b2db84;
+            color: #0284C7;
+            border: 1px solid rgba(2, 132, 199, 0.3);
             box-shadow: 0 2px 6px rgba(205, 158, 75, 0.12);
             margin-bottom: 10px;
             width: fit-content;
@@ -513,14 +507,14 @@ const Hero = ({ setIsOpen }) => {
           .hero-bullet-text {
             font-size: 12px !important;
             font-weight: 600 !important;
-            color: #253910 !important;
+            color: #0284C7 !important;
             line-height: 1.35 !important;
             text-shadow: none !important;
           }
           /* Price Card Container */
           .hero-price-line {
-            background: linear-gradient(135deg, #f9fcf5 0%, #F4EFE3 100%) !important;
-            border: 1.5px dashed #9bc868 !important;
+            background: linear-gradient(135deg, #f0f9ff 0%, #F4EFE3 100%) !important;
+            border: 1.5px dashed #0284C7 !important;
             border-radius: 18px !important;
             padding: 12px 14px !important;
             margin: 0 0 16px !important;
@@ -530,7 +524,7 @@ const Hero = ({ setIsOpen }) => {
             gap: 8px !important;
             font-size: 13.5px !important;
             font-weight: 600 !important;
-            color: #2c4114 !important;
+            color: #0284C7 !important;
             box-shadow: 0 3px 10px rgba(205, 158, 75, 0.08) !important;
             text-shadow: none !important;
             text-align: center !important;
@@ -682,9 +676,9 @@ const Hero = ({ setIsOpen }) => {
                 alignItems: 'center', 
                 padding: '2px 11px', 
                 borderRadius: '20px', 
-                background: 'rgba(56, 189, 248, 0.12)', 
-                border: '1px solid rgba(56, 189, 248, 0.4)', 
-                color: '#38BDF8', 
+                background: 'rgba(255, 255, 255, 0.18)', 
+                border: '1px solid rgba(255, 255, 255, 0.35)', 
+                color: '#ffffff', 
                 fontWeight: 700, 
                 letterSpacing: '0.02em',
                 fontSize: '0.92em'

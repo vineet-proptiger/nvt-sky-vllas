@@ -14,7 +14,7 @@ export default function sitemap() {
     //   priority: 0.9,
     // },
     {
-      url: `${baseUrl}/a-life-in-bloom-by-nvt-sarjapur/privacy-policy`,
+      url: `${baseUrl}/lake-facing-sky-villas/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,

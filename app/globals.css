@@ -774,3 +774,78 @@ nav.fixed {
   animation: ring 2.5s ease-in-out infinite;
   transform-origin: center;
 }
+
+/* ─── Enquire Modal Inputs & Gold CTA Button ─────────────────── */
+.lead-modal-input {
+  width: 100% !important;
+  margin-bottom: 12px !important;
+  padding: 11px 16px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #CD9E4B !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  font-family: var(--font-sans), 'Open Sans', sans-serif !important;
+  font-size: 14px !important;
+  transition: all 0.25s ease !important;
+}
+
+.lead-modal-input::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.lead-modal-input::-webkit-input-placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.lead-modal-input::-moz-placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.lead-modal-input:-ms-input-placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.lead-modal-input:focus {
+  border-color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Modal Submit Button — Vibrant Gold so it stands out powerfully on #0284C7 modal */
+.modal-submit-btn {
+  background: linear-gradient(135deg, #CD9E4B 0%, #B8862D 100%) !important;
+  color: #ffffff !important;
+  border: 1.5px solid #DFB362 !important;
+  border-radius: 50px !important;
+  padding: 13px 32px !important;
+  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(205, 158, 75, 0.4) !important;
+  transition: all 0.3s ease !important;
+  display: block !important;
+  margin: 20px auto 0 !important;
+  width: 190px !important;
+  font-family: var(--font-jost), Montserrat, sans-serif !important;
+  text-align: center !important;
+}
+
+.modal-submit-btn:hover {
+  background: linear-gradient(135deg, #DFB362 0%, #CD9E4B 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35), 0 3px 10px rgba(205, 158, 75, 0.6) !important;
+  border-color: #ffffff !important;
+}
+
+.modal-submit-btn:active {
+  transform: translateY(0) !important;
+}

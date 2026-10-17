@@ -60,7 +60,7 @@ const Overview = ({ setIsOpen }) => {
             style={{ background: '#0284C7' }}
           >
             <div>
-              <p style={{ fontSize: '15.5px', fontFamily: '"Poppins", sans-serif', color: '#EFE4CD', textAlign: 'justify', lineHeight: '1.85', margin: 0 }}>
+              <p style={{ fontSize: '15.5px', fontFamily: '"Poppins", sans-serif', color: '#FFFFFF', textAlign: 'justify', lineHeight: '1.85', margin: 0 }}>
                 <span 
                   style={{ 
                     float: 'left', 

@@ -44,7 +44,7 @@ const Footer = () => (
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           
           <span style={{ color: '#444' }}>|</span>
-          <Link href="/a-life-in-bloom-by-nvt-sarjapur/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
+          <Link href="/lake-facing-sky-villas/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
             Privacy Policy
           </Link>
         </div>

@@ -42,7 +42,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
       <div
         className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col justify-center items-center p-8 mx-auto"
         style={{
-          background: 'radial-gradient(circle at center, #1B4A4D 0%, #041A1C 100%)',
+          background: '#0284C7',
           border: '1px solid #CD9E4B',
           animation: 'slideInRight 0.45s cubic-bezier(0.22,1,0.36,1) forwards',
         }}

@@ -25,7 +25,7 @@ const units = [
   },
   {
     type: "5 BHK",
-    subtitle: "PALATIAL VILLA",
+    subtitle: "LUXURY SKY VILLA",
     tagline: "Grandeur & Elite Space",
     size: "2,520 Sq. Ft.",
     price: "₹ 6.5 Cr*",

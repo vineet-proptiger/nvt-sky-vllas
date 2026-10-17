@@ -26,7 +26,7 @@ const units = [
   {
     type: "4 BHK",
     soldOut: false,
-    subtitle: "PALATIAL SKY VILLA",
+    subtitle: "LUXURY SKY VILLA",
     tagline: "Grandeur With Panoramic Views",
     size: "Spacious 4 BHK",
     price: "Price On Request",

@@ -37,14 +37,15 @@ const Hero = ({ setIsOpen }) => {
           display: none !important;
         }
 
-        /* Content block — compact height and width strictly hugging the text area */
+        /* Content block — full width by default, constrained on desktop */
         .hero-content {
           position: absolute;
           bottom: 0;
           left: 0;
           z-index: 10;
-          width: fit-content;
-          max-width: min(720px, 94vw);
+          width: 100%;
+          max-width: 100%;
+          box-sizing: border-box;
           padding: 24px 52px 24px 44px;
           background: linear-gradient(
             90deg,
@@ -662,7 +663,7 @@ const Hero = ({ setIsOpen }) => {
       <div className="hero-overlay" />
 
       {/* ── Content overlay ── */}
-      <div className="hero-content">
+      <div className="hero-content w-full">
 
         {/* Mobile Luxury Pre-Launch Pill */}
         <div className="hero-mobile-pill">

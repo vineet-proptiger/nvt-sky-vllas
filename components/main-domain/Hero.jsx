@@ -395,18 +395,22 @@ const Hero = ({ setIsOpen }) => {
             aspect-ratio: auto;
             background: #f8faf5 !important;
             padding-top: 68px !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
           }
           .hero-slider-wrapper {
             position: relative;
-            width: 100%;
+            width: 100% !important;
+            max-width: 100% !important;
             height: auto;
             aspect-ratio: 1/1;
           }
           .slide-layer {
             position: absolute !important;
             inset: 0 !important;
-            width: 100%;
-            height: 100%;
+            width: 100% !important;
+            height: 100% !important;
           }
           .hero-image {
             height: 100% !important;
@@ -416,6 +420,9 @@ const Hero = ({ setIsOpen }) => {
           }
           .hero-content {
             position: relative !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
             background: #ffffff !important;
             border-top-left-radius: 28px !important;
             border-top-right-radius: 28px !important;
@@ -493,6 +500,7 @@ const Hero = ({ setIsOpen }) => {
             gap: 8px !important;
             margin-bottom: 16px !important;
             width: 100% !important;
+            box-sizing: border-box !important;
           }
           .hero-bullet-item,
           .hero-bullet-badge {
@@ -505,6 +513,7 @@ const Hero = ({ setIsOpen }) => {
             border-radius: 12px !important;
             box-shadow: 0 2px 6px rgba(7, 43, 74, 0.04) !important;
             width: 100% !important;
+            box-sizing: border-box !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
             text-align: left !important;
@@ -528,6 +537,8 @@ const Hero = ({ setIsOpen }) => {
           }
           /* Royal Midnight Navy Solid Price Card (Option A - No dashed lines) */
           .hero-price-line {
+            width: 100% !important;
+            box-sizing: border-box !important;
             background: linear-gradient(135deg, #072B4A 0%, #031E36 100%) !important;
             border: 1.5px solid #CD9E4B !important;
             border-radius: 16px !important;

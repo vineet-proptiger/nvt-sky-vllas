@@ -32,27 +32,28 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
-        /* Disable full-screen overlay since gradient is only behind text */
+        /* Disable full-height overlay so the sky, upper towers, and lake remain 100% visible */
         .hero-overlay {
-          display: none;
+          display: none !important;
         }
 
-        /* Content block — sits over the image */
+        /* Content block — compact height and width strictly hugging the text area */
         .hero-content {
           position: absolute;
           bottom: 0;
           left: 0;
           z-index: 10;
-          padding: 100px 80px 72px 44px;
-          width: 100%;
-          max-width: 1000px;
-          background: radial-gradient(
-            100% 100% at 0% 100%,
-            rgba(0,0,0,0.95) 0%,
-            rgba(0,0,0,0.7) 55%,
-            rgba(0,0,0,0.2) 75%,
-            transparent 90%
+          width: fit-content;
+          max-width: min(720px, 94vw);
+          padding: 24px 52px 24px 44px;
+          background: linear-gradient(
+            90deg,
+            rgba(7, 43, 74, 0.62) 0%,
+            rgba(4, 30, 52, 0.48) 65%,
+            rgba(4, 30, 52, 0.16) 88%,
+            transparent 100%
           );
+          border-radius: 0 24px 0 0;
         }
 
         /* Main title */
@@ -135,7 +136,7 @@ const Hero = ({ setIsOpen }) => {
           gap: 12px;
           vertical-align: middle;
           padding: 6px 22px 6px 16px;
-          background: radial-gradient(130% 130% at 50% 30%, #0284C7 0%, #0369A1 65%, #072B4A 100%);
+          background: radial-gradient(130% 130% at 50% 30%, #072B4A 0%, #041E33 65%, #021422 100%);
           border: 1.5px solid #DFB362;
           border-radius: 9999px;
           box-shadow: 0 0 16px rgba(205, 158, 75, 0.5), inset 0 0 8px rgba(205, 158, 75, 0.2);
@@ -268,14 +269,16 @@ const Hero = ({ setIsOpen }) => {
             object-position: center 80%;
           }
           .hero-content {
-            padding: 80px 80px 32px 48px !important;
+            padding: 24px 52px 24px 48px !important;
+            width: fit-content !important;
+            max-width: 720px !important;
           }
         }
 
         /* ─── Compact Mini Laptops & Ultrabooks (e.g., ASUS VivoBook, 13-inch notebooks) ─── */
         @media (min-width: 1024px) and (max-height: 720px) {
           .hero-content {
-            padding: 70px 60px 20px 48px !important;
+            padding: 16px 40px 18px 42px !important;
           }
           .hero-bullets {
             margin-bottom: 14px !important;
@@ -306,38 +309,48 @@ const Hero = ({ setIsOpen }) => {
           background: #fff;
         }
 
-        /* ─── Desktop & Tablet Layer Badges (Only screen width >= 768px) ─── */
+        /* ─── Desktop & Tablet Clean Text (Removed background pills as requested) ─── */
         @media (min-width: 768px) {
           .hero-title-badge {
             display: inline-block;
-            background: #0284C7;
-            padding: 6px 18px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            background: none !important;
+            padding: 0 !important;
+            border: none !important;
+            box-shadow: none !important;
           }
           .hero-subtitle-badge {
-            display: inline-block;
-            background: #0284C7;
-            padding: 5px 16px;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            background: none !important;
+            padding: 0 !important;
+            border: none !important;
+            box-shadow: none !important;
           }
           .hero-bullet-badge {
-            background: #0284C7;
-            padding: 6px 16px;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            width: fit-content;
+            background: none !important;
+            padding: 0 !important;
+            border: none !important;
+            box-shadow: none !important;
+            width: auto !important;
             color: #ffffff;
           }
           .hero-bullet-text {
             color: #ffffff !important;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
           }
           .hero-mobile-pill {
             display: none !important;
+          }
+          .hero-price-line {
+            display: flex !important;
+            align-items: center !important;
+            flex-wrap: nowrap !important;
+            gap: 12px !important;
+            margin: 0 0 16px !important;
+            width: fit-content !important;
+            text-align: left !important;
+          }
+          .hero-price-badge {
+            margin: 0 !important;
           }
         }
 
@@ -367,7 +380,9 @@ const Hero = ({ setIsOpen }) => {
             object-position: center 80%;
           }
           .hero-content {
-            padding: 0 28px 46px !important;
+            padding: 20px 42px 20px 24px !important;
+            width: fit-content !important;
+            max-width: 660px !important;
           }
         }
 
@@ -422,8 +437,8 @@ const Hero = ({ setIsOpen }) => {
             letter-spacing: 0.05em;
             text-transform: uppercase;
             background: #F4EFE3;
-            color: #0284C7;
-            border: 1px solid rgba(2, 132, 199, 0.3);
+            color: #072B4A;
+            border: 1px solid rgba(7, 43, 74, 0.3);
             box-shadow: 0 2px 6px rgba(205, 158, 75, 0.12);
             margin-bottom: 10px;
             width: fit-content;
@@ -447,7 +462,7 @@ const Hero = ({ setIsOpen }) => {
           .hero-title {
             font-size: clamp(18px, 5vw, 21px) !important;
             font-weight: 800 !important;
-            color: #0284C7 !important;
+            color: #072B4A !important;
             text-shadow: none !important;
             margin: 0 0 4px !important;
             line-height: 1.2 !important;
@@ -455,27 +470,27 @@ const Hero = ({ setIsOpen }) => {
           .hero-subtitle {
             font-size: 13.5px !important;
             font-weight: 600 !important;
-            color: #0284C7 !important;
+            color: #072B4A !important;
             text-shadow: none !important;
             margin: 0 0 16px !important;
             line-height: 1.4 !important;
           }
           .hero-subtitle .hero-location-text {
-            color: #0284C7 !important;
+            color: #072B4A !important;
           }
           .hero-subtitle .hero-by-dev {
-            color: #0284C7 !important;
-            background: rgba(2, 132, 199, 0.08) !important;
-            border: 1px solid rgba(2, 132, 199, 0.28) !important;
+            color: #072B4A !important;
+            background: rgba(7, 43, 74, 0.08) !important;
+            border: 1px solid rgba(7, 43, 74, 0.28) !important;
           }
           .hero-subtitle .hero-by-dev span {
             color: #64748B !important;
           }
-          /* 2x2 Feature Micro-Cards */
+          /* Clean 1-Column Luxury Feature Rows (Option A - Royal Concierge) */
           .hero-bullets {
-            display: grid !important;
-            grid-template-columns: repeat(2, 1fr) !important;
-            gap: 10px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 8px !important;
             margin-bottom: 16px !important;
             width: 100% !important;
           }
@@ -483,12 +498,12 @@ const Hero = ({ setIsOpen }) => {
           .hero-bullet-badge {
             display: flex !important;
             align-items: center !important;
-            gap: 8px !important;
-            padding: 10px 10px !important;
-            background: #f0f9ff !important;
-            border: 1px solid #DFB362 !important;
-            border-radius: 14px !important;
-            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.05) !important;
+            gap: 10px !important;
+            padding: 9px 12px !important;
+            background: #FDFBF7 !important;
+            border: 1px solid rgba(205, 158, 75, 0.35) !important;
+            border-radius: 12px !important;
+            box-shadow: 0 2px 6px rgba(7, 43, 74, 0.04) !important;
             width: 100% !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
@@ -497,57 +512,69 @@ const Hero = ({ setIsOpen }) => {
           .hero-bullet-item svg {
             width: 18px !important;
             height: 18px !important;
-            background-color: #ffffff !important;
+            background-color: #072B4A !important;
             border: 1.5px solid #CD9E4B !important;
             border-radius: 50% !important;
             padding: 2.5px !important;
             flex-shrink: 0 !important;
-            stroke: #CD9E4B !important;
+            stroke: #DFB362 !important;
           }
           .hero-bullet-text {
-            font-size: 12px !important;
+            font-size: 12.5px !important;
             font-weight: 600 !important;
-            color: #0284C7 !important;
+            color: #072B4A !important;
             line-height: 1.35 !important;
             text-shadow: none !important;
           }
-          /* Price Card Container */
+          /* Royal Midnight Navy Solid Price Card (Option A - No dashed lines) */
           .hero-price-line {
-            background: linear-gradient(135deg, #f0f9ff 0%, #F4EFE3 100%) !important;
-            border: 1.5px dashed #0284C7 !important;
-            border-radius: 18px !important;
-            padding: 12px 14px !important;
+            background: linear-gradient(135deg, #072B4A 0%, #031E36 100%) !important;
+            border: 1.5px solid #CD9E4B !important;
+            border-radius: 16px !important;
+            padding: 12px 16px !important;
             margin: 0 0 16px !important;
             display: flex !important;
             flex-direction: column !important;
             align-items: center !important;
-            gap: 8px !important;
-            font-size: 13.5px !important;
-            font-weight: 600 !important;
-            color: #0284C7 !important;
-            box-shadow: 0 3px 10px rgba(205, 158, 75, 0.08) !important;
+            gap: 6px !important;
+            box-shadow: 0 4px 16px rgba(7, 43, 74, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
             text-shadow: none !important;
             text-align: center !important;
+            position: relative !important;
+            overflow: hidden !important;
           }
           .hero-price-title {
-            font-size: clamp(12px, 3.5vw, 14.5px) !important;
-            white-space: nowrap !important;
+            font-size: 10.5px !important;
+            font-weight: 700 !important;
+            color: #DFB362 !important;
+            letter-spacing: 0.06em !important;
+            text-transform: uppercase !important;
             display: block !important;
+            white-space: normal !important;
           }
           .hero-price-line br {
             display: none !important;
           }
           .hero-price-badge {
-            padding: 6px 20px 6px 16px !important;
-            gap: 10px !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(223, 179, 98, 0.45) !important;
+            border-radius: 9999px !important;
+            padding: 4px 18px 4px 14px !important;
+            gap: 8px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            margin: 0 !important;
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.12) !important;
           }
           .hero-price-leaf {
-            width: 24px !important;
-            height: 24px !important;
+            width: 20px !important;
+            height: 20px !important;
           }
           .hero-price-badge .hero-price-amt {
-            font-size: 20px !important;
+            font-size: 19px !important;
+            font-weight: 800 !important;
             color: #ffffff !important;
+            letter-spacing: 0.02em !important;
           }
           /* CTA Buttons */
           .hero-cta-row {
@@ -572,8 +599,8 @@ const Hero = ({ setIsOpen }) => {
             gap: 8px !important;
           }
           .hero-cta-row .hero-btn-one {
-            color: #0284C7 !important;
-            border: 1.5px solid #0284C7 !important;
+            color: #072B4A !important;
+            border: 1.5px solid #072B4A !important;
             background: #ffffff !important;
             box-shadow: 0 2px 6px rgba(0,0,0,0.04) !important;
           }
@@ -691,7 +718,7 @@ const Hero = ({ setIsOpen }) => {
         </p>
         
         {/* Bullet Points with Backdrop Layer (Desktop only via CSS) */}
-        <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div className="hero-bullets" style={{ marginBottom: '16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
           {[
             "Villa-Style High-Rise Apartments (3 & 4 BHK)",
             "604 Luxury Sky Villas | Just 4 Homes Per Floor",

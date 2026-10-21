@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
       {/* ── Navbar (Sticky/Fixed) ── */}
       <nav className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
         {/* Top Accent Line */}
-        <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, #CD9E4B, #0284C7, #CD9E4B)` }}></div>
+        <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, #CD9E4B, #072B4A, #CD9E4B)` }}></div>
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/lake-facing-sky-villas" className="flex items-center">
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
             href="/lake-facing-sky-villas"
             className="btn-gold shadow-lg !text-[11px] !px-3 !py-2 sm:!text-sm sm:!px-6 sm:!py-3"
             style={{
-              background: '#0284C7',
+              background: '#072B4A',
               color: '#ffffff',
               border: '1.5px solid #CD9E4B',
               borderRadius: '8px',
@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
       <section
         className="relative flex items-center justify-center text-center min-h-[140px] sm:min-h-[200px]"
         style={{
-          background: 'radial-gradient(130% 130% at 50% 30%, #0284C7 0%, #0369A1 65%, #072B4A 100%)',
+          background: 'linear-gradient(160deg, #072B4A 0%, #041E33 55%, #021422 100%)',
         }}
       >
         {/* Dark overlay */}
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               At{' '}
               <Link
                 href="/lake-facing-sky-villas"
-                style={{ color: '#0284C7', fontWeight: '600' }}
+                style={{ color: '#072B4A', fontWeight: '600' }}
               >
                 nvtsarjapurroad.com
               </Link>{' '}
@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 1 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'Roboto, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>1</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>1</span>
                 Updates to This Policy
               </h2>
               <p className="text-sm sm:text-[15px]" style={{ lineHeight: 1.8, color: '#555', fontFamily: 'var(--font-jost), Jost, sans-serif', paddingLeft: '44px' }}>
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 2 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>2</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>2</span>
                 Information We Collect
               </h2>
               <div style={{ paddingLeft: '44px' }}>
@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
                     'Pages visited and referring URLs',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2" style={{ fontSize: '14px', color: '#666', fontFamily: 'var(--font-jost), Jost, sans-serif', lineHeight: 1.8 }}>
-                      <span style={{ color: '#0284C7', flexShrink: 0, marginTop: '2px' }}>–</span>
+                      <span style={{ color: '#072B4A', flexShrink: 0, marginTop: '2px' }}>–</span>
                       {item}
                     </li>
                   ))}
@@ -164,7 +164,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 3 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>3</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>3</span>
                 Purpose of Data Collection
               </h2>
               <ul className="space-y-2" style={{ paddingLeft: '44px' }}>
@@ -190,7 +190,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 4 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>4</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>4</span>
                 Use of Cookies and Tracking Technologies
               </h2>
               <ul className="space-y-2" style={{ paddingLeft: '44px' }}>
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 5 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>5</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>5</span>
                 Google Analytics and Remarketing
               </h2>
               <div style={{ paddingLeft: '44px' }}>
@@ -231,7 +231,7 @@ export default function PrivacyPolicy() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all hover:opacity-90"
-                    style={{ background: '#0284C7', color: '#fff' }}
+                    style={{ background: '#072B4A', color: '#fff' }}
                   >
                     Google Ads Settings →
                   </a>
@@ -240,7 +240,7 @@ export default function PrivacyPolicy() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border-2 transition-all hover:opacity-80"
-                    style={{ borderColor: '#0284C7', color: '#0284C7' }}
+                    style={{ borderColor: '#072B4A', color: '#072B4A' }}
                   >
                     Google Analytics Opt-Out →
                   </a>
@@ -251,7 +251,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 6 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>6</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>6</span>
                 Data Security
               </h2>
               <ul className="space-y-2" style={{ paddingLeft: '44px' }}>
@@ -271,7 +271,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 7 ── */}
             <div className="mb-10" data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>7</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>7</span>
                 Third-Party Disclosure
               </h2>
               <p className="text-sm sm:text-[15px]" style={{ lineHeight: 1.8, color: '#555', fontFamily: 'var(--font-jost), Jost, sans-serif', paddingLeft: '44px' }}>
@@ -282,7 +282,7 @@ export default function PrivacyPolicy() {
             {/* ── Section 8 — Contact ── */}
             <div data-aos="fade-up">
               <h2 className="flex items-center gap-2 sm:gap-3 mb-4 text-lg sm:text-[22px]" style={{ fontWeight: '700', color: 'var(--color-text)', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#0284C7', color: '#fff' }}>8</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold" style={{ background: '#072B4A', color: '#fff' }}>8</span>
                 Contact Us
               </h2>
               <div
@@ -296,7 +296,7 @@ export default function PrivacyPolicy() {
                 <a
                   href="tel:9718344024"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:opacity-90"
-                  style={{ background: '#0284C7', color: '#fff' }}
+                  style={{ background: '#072B4A', color: '#fff' }}
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />

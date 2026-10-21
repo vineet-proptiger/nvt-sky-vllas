@@ -56,8 +56,8 @@ const Overview = ({ setIsOpen }) => {
         {/* Left Side: Green Box (Paragraph + Info Boxes) */}
         <div className="w-full lg:w-7/12 flex flex-col" data-aos="fade-up" data-aos-duration="1000">
           <div 
-            className="relative p-6 sm:p-8 rounded-2xl shadow-[0_12px_36px_rgba(2,132,199,0.18)] overflow-hidden flex-1 flex flex-col justify-between" 
-            style={{ background: '#0284C7' }}
+            className="relative p-6 sm:p-8 rounded-2xl shadow-[0_12px_36px_rgba(7,43,74,0.22)] overflow-hidden flex-1 flex flex-col justify-between" 
+            style={{ background: 'linear-gradient(145deg, #072B4A 0%, #031E36 100%)', border: '1px solid #CD9E4B' }}
           >
             <div>
               <p style={{ fontSize: '15.5px', fontFamily: '"Poppins", sans-serif', color: '#FFFFFF', textAlign: 'justify', lineHeight: '1.85', margin: 0 }}>
@@ -100,13 +100,13 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 1: Status */}
               <div className="flex items-center gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#0284C7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#072B4A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#0284C7] leading-tight uppercase">Pre Launch</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">Pre Launch</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[13px] sm:text-[14px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">STATUS</span>
                 </div>
               </div>
@@ -114,13 +114,13 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 2: Total Area */}
               <div className="flex items-center gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#0284C7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#072B4A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 21c-4.97-4.97-8-8.58-8-12a8 8 0 1 1 16 0c0 3.42-3.03 7.03-8 12z" />
                     <circle cx="12" cy="9" r="3" />
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#0284C7] leading-tight uppercase">300 Acres</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">300 Acres</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[13px] sm:text-[14px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">TOTAL AREA</span>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 3: Total Residences */}
               <div className="flex items-center gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#0284C7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#072B4A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16" />
                     <path d="M9 8h2" />
                     <path d="M13 8h2" />
@@ -138,7 +138,7 @@ const Overview = ({ setIsOpen }) => {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#0284C7] leading-tight uppercase">604 Units</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">604 Units</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[13px] sm:text-[14px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">TOTAL RESIDENCES</span>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 4: Structure & Density */}
               <div className="flex items-center gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#0284C7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 sm:w-9 sm:h-9 text-[#072B4A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
                     <line x1="9" y1="22" x2="9" y2="2" />
                     <path d="M14 6h2" />
@@ -156,7 +156,7 @@ const Overview = ({ setIsOpen }) => {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#0284C7] leading-tight uppercase">7 Towers (G+30)</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">7 Towers (G+30)</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[13px] sm:text-[14px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">4 HOMES PER FLOOR</span>
                 </div>
               </div>

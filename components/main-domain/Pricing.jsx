@@ -111,7 +111,7 @@ const Pricing = ({ setIsOpen }) => {
                 {/* Icon */}
                 <div
                   className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 bg-white shadow-xs border ${
-                    unit.isPopular ? "border-[#EFE4CD] text-[#CD9E4B]" : "border-[#EFE4CD] text-[#0284C7]"
+                    unit.isPopular ? "border-[#EFE4CD] text-[#CD9E4B]" : "border-[#EFE4CD] text-[#072B4A]"
                   }`}
                 >
                   <BedDouble size={20} strokeWidth={1.8} />
@@ -143,7 +143,7 @@ const Pricing = ({ setIsOpen }) => {
                   className={`font-extrabold leading-none ${
                     unit.price.length > 10 ? "text-[22px] sm:text-[25px]" : "text-[29px] sm:text-[32px]"
                   } ${
-                    unit.isPopular ? "text-[#A67D37]" : "text-[#0284C7]"
+                    unit.isPopular ? "text-[#A67D37]" : "text-[#072B4A]"
                   }`}
                   style={{ fontFamily: F_JOST }}
                 >
@@ -173,7 +173,7 @@ const Pricing = ({ setIsOpen }) => {
                 className={`w-full py-3.5 px-6 rounded-full text-[12.5px] font-extrabold tracking-wider uppercase transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer flex items-center justify-center gap-2 ${
                   unit.isPopular
                     ? "bg-gradient-to-r from-[#CD9E4B] to-[#A67D37] border-2 border-[#CD9E4B] text-white hover:brightness-110 shadow-[#CD9E4B]/25"
-                    : "bg-white border-2 border-[#CD9E4B] text-[#0284C7] hover:bg-[#0284C7] hover:text-white"
+                    : "bg-white border-2 border-[#CD9E4B] text-[#072B4A] hover:bg-[#072B4A] hover:text-white"
                 }`}
                 style={{ fontFamily: F_JOST }}
               >

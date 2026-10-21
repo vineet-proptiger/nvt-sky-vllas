@@ -57,10 +57,10 @@ const Location = () => {
                     className="text-[14.5px] sm:text-[17px] font-bold text-[#1A2024] tracking-wide uppercase flex items-center gap-1.5 sm:gap-2 m-0"
                     style={{ fontFamily: F_JOST }}
                   >
-                    <MapPin size={20} className="text-[#0284C7] shrink-0" />
+                    <MapPin size={20} className="text-[#072B4A] shrink-0" />
                     <span>SEAMLESS CONNECTIVITY</span>
                   </h3>
-                  <span className="text-[11px] font-bold text-[#0284C7] bg-[#F4EFE3] px-2.5 py-0.5 rounded-full border border-[#0284C7]/30 whitespace-nowrap shrink-0 inline-flex items-center gap-1 shadow-2xs">
+                  <span className="text-[11px] font-bold text-[#072B4A] bg-[#F4EFE3] px-2.5 py-0.5 rounded-full border border-[#072B4A]/30 whitespace-nowrap shrink-0 inline-flex items-center gap-1 shadow-2xs">
                     📍 Origin: NVT Sky Villas
                   </span>
                 </div>
@@ -71,7 +71,7 @@ const Location = () => {
                   <div 
                     className="absolute left-[11px] top-2 bottom-3 w-[2px] rounded-full pointer-events-none"
                     style={{
-                      background: 'linear-gradient(to bottom, #CD9E4B 0%, #0284C7 50%, #CD9E4B 100%)'
+                      background: 'linear-gradient(to bottom, #CD9E4B 0%, #072B4A 50%, #CD9E4B 100%)'
                     }}
                   />
 
@@ -82,12 +82,12 @@ const Location = () => {
                     >
                       {/* Station Node Marker */}
                       <div className="absolute -left-6 w-[24px] flex items-center justify-center pointer-events-none">
-                        <span className="w-[10px] h-[10px] rounded-full bg-white border-[2.5px] border-[#CD9E4B] group-hover:scale-125 group-hover:border-[#0284C7] transition-transform duration-200 shadow-xs" />
+                        <span className="w-[10px] h-[10px] rounded-full bg-white border-[2.5px] border-[#CD9E4B] group-hover:scale-125 group-hover:border-[#072B4A] transition-transform duration-200 shadow-xs" />
                       </div>
 
                       {/* Landmark Name */}
                       <span 
-                        className="text-[14.5px] font-semibold text-gray-800 group-hover:text-[#0284C7] transition-colors pl-1"
+                        className="text-[14.5px] font-semibold text-gray-800 group-hover:text-[#072B4A] transition-colors pl-1"
                         style={{ fontFamily: F_SANS }}
                       >
                         {item.name}
@@ -95,7 +95,7 @@ const Location = () => {
 
                       {/* Distance Time Badge */}
                       <span 
-                        className="text-[12px] font-extrabold text-[#0284C7] bg-[#F4EFE3] border border-[#0284C7]/30 px-2.5 py-0.5 rounded-full whitespace-nowrap shadow-2xs ml-3"
+                        className="text-[12px] font-extrabold text-[#072B4A] bg-[#F4EFE3] border border-[#072B4A]/30 px-2.5 py-0.5 rounded-full whitespace-nowrap shadow-2xs ml-3"
                         style={{ fontFamily: F_JOST }}
                       >
                         {item.dist}
@@ -110,7 +110,7 @@ const Location = () => {
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-[#CD9E4B] animate-pulse"></span> Prime Sarjapur–Attibele Corridor
                 </span>
-                <span className="text-[#0284C7] font-bold">Bangalore East</span>
+                <span className="text-[#072B4A] font-bold">Bangalore East</span>
               </div> */}
             </div>
           </div>
@@ -124,8 +124,8 @@ const Location = () => {
               width: '100%',
               height: '100%',
               position: 'relative',
-              background: '#0284C7',
-              boxShadow: '0 12px 32px rgba(2, 132, 199, 0.18)',
+              background: '#072B4A',
+              boxShadow: '0 12px 32px rgba(7, 43, 74, 0.22)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* Floating Vertical Enquire Tab — Desktop only */}
       <div 
-        className="hidden lg:flex fixed z-50 cursor-pointer text-white uppercase text-[14px] leading-[20px] font-bold tracking-[0.4px] whitespace-nowrap bg-[#0284C7] items-center justify-center gap-[6px] hover:bg-[#CD9E4B] hover:text-white transition-colors duration-300"
+        className="hidden lg:flex fixed z-50 cursor-pointer text-white uppercase text-[14px] leading-[20px] font-bold tracking-[0.4px] whitespace-nowrap bg-[#072B4A] items-center justify-center gap-[6px] hover:bg-[#CD9E4B] hover:text-white transition-colors duration-300"
         style={{
           top: '50%',
           right: '10px',
@@ -146,7 +146,7 @@ export default function Home() {
         {/* Call Now - Right */}
         <a 
           href="tel:+919718344024" 
-          className="flex-1 bg-[#0284C7] text-white py-2.5 flex flex-col items-center justify-center gap-1 hover:bg-[#0369A1] transition-colors"
+          className="flex-1 bg-[#072B4A] text-white py-2.5 flex flex-col items-center justify-center gap-1 hover:bg-[#031E36] transition-colors"
         >
           <Phone size={20} className="text-white animate-phone-ring" />
           <span className="text-[12px] font-medium tracking-wide">Call Now</span>

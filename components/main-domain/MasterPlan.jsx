@@ -54,13 +54,13 @@ const MasterPlan = ({ setIsOpen }) => {
           <div className="flex justify-center items-center">
             <button 
               onClick={() => setActiveTab('master')}
-              className={`px-8 py-3 text-[17px] font-medium transition-all cursor-pointer border border-[#CD9E4B] ${activeTab === 'master' ? 'bg-[#0284C7] text-white' : 'bg-transparent text-[#0284C7]'}`}
+              className={`px-8 py-3 text-[17px] font-medium transition-all cursor-pointer border border-[#CD9E4B] ${activeTab === 'master' ? 'bg-[#072B4A] text-white' : 'bg-transparent text-[#072B4A]'}`}
             >
               Master Plan
             </button>
             <button 
               onClick={() => setActiveTab('floor')}
-              className={`px-8 py-3 text-[17px] font-medium transition-all cursor-pointer border border-l-0 border-[#CD9E4B] ${activeTab === 'floor' ? 'bg-[#0284C7] text-white' : 'bg-transparent text-[#0284C7]'}`}
+              className={`px-8 py-3 text-[17px] font-medium transition-all cursor-pointer border border-l-0 border-[#CD9E4B] ${activeTab === 'floor' ? 'bg-[#072B4A] text-white' : 'bg-transparent text-[#072B4A]'}`}
             >
               Floor Plan
             </button>
@@ -81,7 +81,7 @@ const MasterPlan = ({ setIsOpen }) => {
                   className="w-full h-auto mx-auto transition-all duration-500 filter blur-[6px] group-hover:blur-[3px] group-hover:scale-[1.02]" 
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 flex items-center justify-center">
-                  <span className="opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-[#0284C7] text-white px-5 py-2.5 rounded-full text-[13px] sm:text-[14px] font-semibold tracking-wider uppercase flex items-center gap-2 shadow-lg">
+                  <span className="opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-[#072B4A] text-white px-5 py-2.5 rounded-full text-[13px] sm:text-[14px] font-semibold tracking-wider uppercase flex items-center gap-2 shadow-lg">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="11" cy="11" r="8"></circle>
                       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -98,7 +98,7 @@ const MasterPlan = ({ setIsOpen }) => {
                 <button
                   type="button"
                   onClick={() => setIsOpen && setIsOpen(true)}
-                  className="px-5 py-2.5 text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider text-[#0284C7] border border-[#CD9E4B] rounded hover:bg-[#0284C7] hover:text-white transition-colors duration-300 flex items-center gap-2"
+                  className="px-5 py-2.5 text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider text-[#072B4A] border border-[#CD9E4B] rounded hover:bg-[#072B4A] hover:text-white transition-colors duration-300 flex items-center gap-2"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -111,7 +111,7 @@ const MasterPlan = ({ setIsOpen }) => {
                 <button
                   type="button"
                   onClick={() => setIsOpen && setIsOpen(true)}
-                  className="bg-[#0284C7] hover:bg-[#CD9E4B] text-white px-5 py-2.5 text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider rounded border border-[#CD9E4B] shadow transition-colors duration-300 flex items-center gap-2"
+                  className="bg-[#072B4A] hover:bg-[#CD9E4B] text-white px-5 py-2.5 text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider rounded border border-[#CD9E4B] shadow transition-colors duration-300 flex items-center gap-2"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -135,13 +135,13 @@ const MasterPlan = ({ setIsOpen }) => {
                       className="w-full h-full object-contain filter blur-[6px] group-hover:blur-[3px] transition-all duration-300" 
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-white/20">
-                      <span className="bg-[#0284C7] group-hover:bg-[#CD9E4B] text-white px-5 py-3 text-[13px] leading-snug font-semibold uppercase tracking-wider text-center transition-colors duration-300">
+                      <span className="bg-[#072B4A] group-hover:bg-[#CD9E4B] text-white px-5 py-3 text-[13px] leading-snug font-semibold uppercase tracking-wider text-center transition-colors duration-300">
                         Download<br/>Floor Plans
                       </span>
                     </div>
                   </a>
                   <div className="p-6 text-center border-t border-gray-100 bg-white">
-                    <h4 className="text-[22px] text-[#0284C7] font-semibold mb-4">{plan.label}</h4>
+                    <h4 className="text-[22px] text-[#072B4A] font-semibold mb-4">{plan.label}</h4>
                   </div>
                 </div>
               ))}
@@ -177,7 +177,7 @@ const MasterPlan = ({ setIsOpen }) => {
                 setIsLightboxOpen(false)
                 if (setIsOpen) setIsOpen(true)
               }}
-              className="bg-[#0284C7] hover:bg-[#CD9E4B] text-white px-4 py-2 text-xs md:text-sm font-semibold tracking-wider uppercase rounded shadow transition-colors flex items-center gap-2"
+              className="bg-[#072B4A] hover:bg-[#CD9E4B] text-white px-4 py-2 text-xs md:text-sm font-semibold tracking-wider uppercase rounded shadow transition-colors flex items-center gap-2"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>

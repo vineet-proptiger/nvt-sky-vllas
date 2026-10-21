@@ -62,7 +62,7 @@ const StatsBar = () => (
             fontFamily: F_JOST,
             fontSize: '22px',
             fontWeight: '700',
-            color: '#0284C7',
+            color: '#072B4A',
             lineHeight: 1.2,
           }}>{s.value}</span>
           <span style={{

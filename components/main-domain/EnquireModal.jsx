@@ -40,10 +40,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col justify-center items-center p-8 mx-auto"
+        className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl flex flex-col justify-center items-center p-8 mx-auto"
         style={{
-          background: '#0284C7',
-          border: '1px solid #CD9E4B',
+          background: 'linear-gradient(160deg, #072B4A 0%, #041E33 55%, #021422 100%)',
+          border: '1.5px solid #CD9E4B',
+          boxShadow: '0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px rgba(205, 158, 75, 0.2)',
           animation: 'slideInRight 0.45s cubic-bezier(0.22,1,0.36,1) forwards',
         }}
         onClick={(e) => e.stopPropagation()}

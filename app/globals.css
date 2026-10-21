@@ -23,23 +23,23 @@
   --color-gold-dark: #A67D37;
   --color-gold-bg: rgba(205, 158, 75, 0.1);     
 
-  /* ── Brand Primary (Sky/Lake Blue) ── */
-  --color-brand: #0284C7;
-  --color-brand-hover: #0369A1;
-  --color-brand-light: rgba(2, 132, 199, 0.08);
+  /* ── Brand Primary (Luxury Dark Midnight Navy) ── */
+  --color-brand: #072B4A;
+  --color-brand-hover: #031E36;
+  --color-brand-light: rgba(7, 43, 74, 0.08);
 
   /* ── Text (nav links, headings) ── */
   --color-nav-text: #111111;
-  --color-heading-brown: #0284C7;
+  --color-heading-brown: #072B4A;
 
   /* ── Section Backgrounds ── */
   --color-cream-bg: #EFE4CD;
   --color-border-gold: #CD9E4B;
 
-  /* ── Charcoal Gray Primary Palette ── */
-  --color-primary: #0284C7;
-  --color-primary-light: #38BDF8;
-  --color-primary-dark: #0369A1;
+  /* ── Primary Palette ── */
+  --color-primary: #072B4A;
+  --color-primary-light: #0C3E69;
+  --color-primary-dark: #031E36;
 
   --color-dark: #111111;
   --color-dark-mid: #222B26;
@@ -514,13 +514,13 @@
 
   /* ══ GLOBAL BUTTON OVERRIDE ══ */
   .btn-gold, .btn-primary, .btn-brand {
-    background: #0284C7 !important;
+    background: #072B4A !important;
     color: #ffffff !important;
     border: 1.5px solid #CD9E4B !important;
     font-weight: 800 !important;
     cursor: pointer !important;
     transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(205, 158, 75, 0.15) !important;
+    box-shadow: 0 4px 15px rgba(7, 43, 74, 0.25) !important;
   }
 
   .btn-gold-outline {
@@ -818,7 +818,7 @@ nav.fixed {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35) !important;
 }
 
-/* Modal Submit Button — Vibrant Gold so it stands out powerfully on #0284C7 modal */
+/* Modal Submit Button — Vibrant Gold so it stands out powerfully on dark luxury modal */
 .modal-submit-btn {
   background: linear-gradient(135deg, #CD9E4B 0%, #B8862D 100%) !important;
   color: #ffffff !important;

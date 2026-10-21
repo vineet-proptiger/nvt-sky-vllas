@@ -190,7 +190,7 @@ const ContactCTA = () => {
                 </label>
 
                 <button type="submit" disabled={loading}
-                  className="w-full py-4 mt-2 text-sm font-bold tracking-widest uppercase transition-all duration-300 rounded-lg bg-[#0284C7] text-white hover:bg-[#CD9E4B] cursor-pointer"
+                  className="w-full py-4 mt-2 text-sm font-bold tracking-widest uppercase transition-all duration-300 rounded-lg bg-[#072B4A] text-white border border-[#CD9E4B] hover:bg-[#CD9E4B] cursor-pointer"
                   style={{ fontFamily: F_SANS }}>
                   {loading ? 'Submitting...' : 'Send'}
                 </button>

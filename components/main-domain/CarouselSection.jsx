@@ -114,7 +114,7 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
         scrollMarginTop: '80px',
         padding: '56px 0 84px 0',
         background: id === 'amenities' 
-          ? 'linear-gradient(180deg, #031E36 0%, #0284C7 50%, #072B4A 100%)' 
+          ? 'linear-gradient(180deg, #021422 0%, #072B4A 50%, #031E36 100%)' 
           : '#F4EFE3',
         color: id === 'amenities' ? '#ffffff' : '#121212',
         fontFamily: '"Montserrat", var(--font-montserrat), sans-serif',
@@ -131,8 +131,8 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
           {/* Top-Right Soft Emerald Orb */}
           <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#CD9E4B]/20 blur-[110px] pointer-events-none" />
           
-          {/* Bottom-Left Soft Sky Blue Orb */}
-          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#0284C7]/25 blur-[110px] pointer-events-none" />
+          {/* Bottom-Left Soft Luxury Navy Orb */}
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#072B4A]/40 blur-[110px] pointer-events-none" />
 
           {/* Center Subtle Resort Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] rounded-full bg-[#DFB362]/10 blur-[100px] pointer-events-none" />

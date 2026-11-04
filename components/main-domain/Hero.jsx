@@ -680,7 +680,7 @@ const Hero = ({ setIsOpen }) => {
         {/* Main Heading */}
         <h1 className="hero-title">
           <span className="hero-title-badge">
-            NVT Sky Villas
+            NVT Sky Villas (Apartments)
           </span>
         </h1>
 

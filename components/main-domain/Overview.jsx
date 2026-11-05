@@ -120,7 +120,7 @@ const Overview = ({ setIsOpen }) => {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">300 Acres</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[20px] sm:text-[23px] font-bold text-[#072B4A] leading-tight uppercase">100 Acres</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[13px] sm:text-[14px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">TOTAL AREA</span>
                 </div>
               </div>

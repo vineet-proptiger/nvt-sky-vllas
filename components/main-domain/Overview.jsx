@@ -78,7 +78,7 @@ const Overview = ({ setIsOpen }) => {
                 <span style={{ fontWeight: '700', color: '#FFFFFF' }}>VT Sky Villas</span> by NVT Quality Lifestyle is a premium residential project featuring villa-style high-rise apartments in East Bengaluru. Located along Sarjapur–Attibele Road, the project forms Phase 2 of NVT A Wonderful World, a sprawling 102-acre integrated township.{' '}
                 <span className={`lg:hidden ${isExpanded ? 'hidden' : 'inline'}`}>... </span>
                 <span className={`${isExpanded ? 'inline' : 'hidden'} lg:inline`}>
-                  Spread across 30 acres, NVT Sky Villas comprises 604 residences in 3 BHK and 4 BHK configurations across 7 towers of G+30 floors. The project offers lake-facing homes overlooking Bidaraguppe Lake, combining spacious living, scenic surroundings, and a premium residential lifestyle. With just 4 homes per floor and panoramic 300-acre lake views, experience privacy and elevated luxury living.{' '}
+                  Spread across 30 acres, NVT Sky Villas comprises 604 residences in 3 BHK and 4 BHK configurations across 7 towers of G+30 floors. The project offers lake-facing homes overlooking Bidaraguppe Lake, combining spacious living, scenic surroundings, and a premium residential lifestyle. With just 4 homes per floor and panoramic 100-acre lake views, experience privacy and elevated luxury living.{' '}
                 </span>
                 <button 
                   onClick={() => setIsExpanded(!isExpanded)}

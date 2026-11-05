@@ -8,7 +8,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'NVT Sky Villas | Villa-Style Residences in Sarjapur, Bangalore',
-    description: 'Discover luxury 3 & 4 BHK sky villas at NVT Sky Villas, featuring 300-acre lake views, 4 homes per floor, and world-class amenities in East Bengaluru.',
+    description: 'Discover luxury 3 & 4 BHK sky villas at NVT Sky Villas, featuring 100-acre lake views, 4 homes per floor, and world-class amenities in East Bengaluru.',
     url: 'https://nvtsarjapurroad.com/lake-facing-sky-villas',
     siteName: 'NVT Sky Villas',
   },

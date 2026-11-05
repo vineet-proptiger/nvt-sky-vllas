@@ -18,7 +18,7 @@ const units = [
     btnText: "GET DETAILS",
     features: [
       "Unlock Pricing & Floor Plans",
-      "300-Acre Lake Views",
+      "100-acre Lake Views",
       "Just 4 Homes Per Floor",
     ],
     isPopular: false,

@@ -75,7 +75,7 @@ const Overview = ({ setIsOpen }) => {
                 >
                   A
                 </span>
-                <span style={{ fontWeight: '700', color: '#FFFFFF' }}> Life in Bloom by NVT</span> is an exclusive enclave of luxury 4/5 BHK villas, thoughtfully crafted for those who value space, privacy, and natural living. Set across 10.5 acres within a master-planned township, this low-density development is nestled beside a breathtaking 300-acre lake, offering a rare blend of serenity and connectivity.{' '}
+                <span style={{ fontWeight: '700', color: '#FFFFFF' }}> Life in Bloom by NVT</span> is an exclusive enclave of luxury 4/5 BHK villas, thoughtfully crafted for those who value space, privacy, and natural living. Set across 10.5 acres within a master-planned township, this low-density development is nestled beside a breathtaking 100-acre lake, offering a rare blend of serenity and connectivity.{' '}
                 <span className={`lg:hidden ${isExpanded ? 'hidden' : 'inline'}`}>... </span>
                 <span className={`${isExpanded ? 'inline' : 'hidden'} lg:inline`}>
                   Each villa is designed to welcome abundant daylight, seamless indoor-outdoor flow, and refined comfort—making everyday living feel calm, balanced, and truly elevated. This is where Earth, Water, Air, and Space find their rhythm again, shaping a way of life that feels natural and alive; reminding us that luxury isn't built, it's remembered.{' '}

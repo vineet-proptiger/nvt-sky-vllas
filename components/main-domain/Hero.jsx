@@ -734,7 +734,7 @@ const Hero = ({ setIsOpen }) => {
           {[
             "Villa-Style High-Rise Apartments (3 & 4 BHK)",
             "604 Luxury Sky Villas | Just 4 Homes Per Floor",
-            "Spread Across 30 Acres with 300-Acre Lake Views",
+            "Spread Across 30 Acres with 100-acre Lake Views",
             "7 Towers of G+30 Floors Overlooking Bidaraguppe Lake"
           ].map((text, i) => (
           <div 

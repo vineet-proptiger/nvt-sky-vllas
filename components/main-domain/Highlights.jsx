@@ -3,7 +3,7 @@ import { Trees, Layers, MapPin, Sun, Flower2 } from 'lucide-react'
 
 const highlightsData = [
   {
-    title: '300-Acre Lake Views',
+    title: '100-acre Lake Views',
     desc: 'Unobstructed panoramic lake views overlooking Bidaraguppe Lake, creating a serene and picturesque living experience.',
     bg: 'bg-[#fdf2f8]',
     color: 'text-[#e11d48]',

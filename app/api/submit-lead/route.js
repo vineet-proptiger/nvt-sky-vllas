@@ -65,10 +65,10 @@ export async function POST(request) {
     /* ── Tracking ── */
     const utmSource = get('utm_source') || 'Microsite'
     const utmMedium = get('utm_medium') || 'organic'
-    const utmCampaign = get('utm_campaign')
+    const campaignName = get('campaign_name')
+    const utmCampaign = get('utm_campaign') || campaignName
     const utmTerm = get('utm_term')
     const utmContent = get('utm_content')
-    const campaignName = get('campaign_name')
 
     const gclid = get('gclid')
     const gbraid = get('gbraid')
@@ -135,9 +135,9 @@ export async function POST(request) {
 
     // Append new tracking parameters from the URL
     const newTrackingParams = {
-      google_campaign_id: campaignName,
-      google_ad_group_id: get('google_ad_group_id'),
-      google_ad_group_name: get('google_ad_group_name'),
+      google_campaign_id: get('google_campaign_id') || get('utm_id'),
+      google_ad_group_id: get('google_ad_group_id') || get('ad_group_id'),
+      google_ad_group_name: get('google_ad_group_name') || get('ad_group_name'),
       google_ad_name: get('google_ad_name'),
       google_ad_id: get('google_ad_id'),
       google_wbraid: get('google_wbraid'),
@@ -199,7 +199,7 @@ export async function POST(request) {
 
       gaMedium: utmMedium,
       campaign: utmCampaign,
-      addgroup: get('adgroup_name'),
+      addgroup: get('adgroup_name') || get('ad_group_name'),
 
       utm_term: utmTerm,
       utm_content: utmContent,
